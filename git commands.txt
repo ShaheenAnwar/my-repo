@@ -1,0 +1,35 @@
+
+git ls-files --> shows files in staging area.
+
+git rm filename.ext --> to remove files from both staging area and working directory.
+
+git rm --cached filename.ext --> to remove files only from staging area (not from working directory).
+
+git mv filename.ext new_file.new_ext --> to change file names & ext
+
+git config --list --> to check your configuration settings
+
+git show HEAD~3 --> To view the specific commit (here head points to current branch, ~ point to go last commits and 3 is the 3rd last commit)
+
+git show HEAD~3:filename --> to view specific file in particular commit.
+
+git ls-tree HEAD~1 --> shows all the files/folders in the commit.
+
+git restore --staged hello.java --> to remove file from staging area.
+
+git remote add origin https://github.com/ShaheenAnwar/my-repo.git --> to add remote repository.
+
+git push origin master --> to push files to remote (master is local branch name)
+===============================================================================================
+How to remove local (untracked) files from the current Git working tree:
+	show what will be deleted by using the -n option
+	git clean -n 
+	git clean -fd 
+		(is is to delete files and d is for directory)
+		
+=============================================================================================
+Stash a specific file:::
+	To stash a specific file, use the “git stash push” command and specify the file you want to stash.
+		$ git stash push -m "message" <file>
+		$ git stash push -m "modified the README.md" README.md
+=================================================================================================
